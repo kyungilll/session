@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<session-descriptor>
+		<cookie-name>SAMPLESESSIONID</cookie-name>
+		<persistent-store-type>replicated_if_clustered</persistent-store-type> 
+		<timeout-secs>3600</timeout-secs>
+    </session-descriptor>
+    <jsp-descriptor>
+		<precompile>false</precompile> 
+		<page-check-seconds>-1</page-check-seconds>
+	</jsp-descriptor>
+	<context-root>/</context-root>
+</weblogic-web-app>
